@@ -2,7 +2,7 @@ body {
 	background-color: rgb(150, 150, 100);
 }
 
-h1, p, label {
+h1, h2, p, label {
 	font-family: Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;
 	text-align: center;
 	color : rgb(45, 45, 150);
