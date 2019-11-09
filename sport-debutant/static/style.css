@@ -24,6 +24,12 @@ button:hover, input:hover, .input_color_invers, select:hover {
 	background-color: rgb(150, 150, 100);
 }
 
+.demiBouton {
+	width : 40%;
+	display : inline-block;
+	margin : 2.2%;
+}
+
 ::placeholder {
 	color : rgb(50, 50, 50);
 }
