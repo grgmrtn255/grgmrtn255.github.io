@@ -118,7 +118,7 @@ let Defi = {
 	placePseudo : () => {
 		if (localStorage.username) {
 			document.getElementById('pseudo').innerHTML = "Bienvenu " + localStorage.username + " !";
-			localstorage.categorie = "";
+			localStorage.categorie = "";
 		} else {
 			window.location.replace('./index.html');
 			alert('Veuillez entrer un pseudo.');
@@ -164,7 +164,7 @@ let Serie = {
 };
 
 let DataBase = {
-	lire : () => {return localStorage;},
+	lire : () => {return localStorage;},graph.html
 	ecrire : (Serie) => {
 		if (localStorage[Serie.date] != undefined) {
 			localStorage[Serie.date] = parseInt(localStorage[Serie.date]) + parseInt(Serie.points);
