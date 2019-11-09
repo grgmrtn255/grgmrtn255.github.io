@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Sport</title>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+		<script type="text/javascript" src="../static/script.js"></script>
+		<link rel="stylesheet" type="text/css" href="../static/style.css">
+	</head>
+
+	<body>
+
+		<div class="grandeMarge">
+			<h1>Vos séries Champion !</h1>
+
+			<label for="exercice">Choississez l'exercice : </label>
+			<select id="exercice">
+				<option value="pompes">Pompes</option>
+				<option value="tractions">Tractions</option>
+				<option value="deeps">Deeps</option>
+				<option value="jambes">Fentes/Squats</option>
+				<option value="abdos">Abdos</option>
+				<option value="lever_de_genou">Lever de genou</option>
+				<option value="jumpingjack">Jumping Jack</option>
+				<option value="mountainclimber">MountainClimber</option>
+				<option value="burppees">Burppees</option>
+			</select>
+			<label for="quantite">Entrez le nombre de répétitions : </label>
+			<input id='quantite' type="number" name="quantite" placeholder="10" required><br><br>
+			<input type="button" value="Enregistrer la série" onclick="Serie.save('exercice', 'quantite');" class="input_color_invers">
+
+		</div>
+
+		<a href="/troll"><div id="graphique_container">
+			<canvas id="graphique_canvas"></canvas>
+		</div></a>
+
+		<script type="text/javascript">
+			Graphique.getData();
+		</script>
+
+	</body>
+</html>

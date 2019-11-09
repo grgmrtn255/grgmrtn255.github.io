@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Sport</title>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+		<script type="text/javascript" src="../static/script.js"></script>
+		<link rel="stylesheet" type="text/css" href="../static/style.css">
+	</head>
+
+	<body>
+
+		<div class="grandeMarge">
+			<h1 id="pseudo"></h1>
+
+			<p id="date"></p>
+
+			<p id="defi">Choississez une catégorie de série en cliquant sur un bouton.</p>
+
+			<button id="serieMuscu" onclick="Defi.changeDefi('muscu', 'defi');">
+				Musculation
+			</button><br><br>
+
+			<button id="serieCardio" onclick="Defi.changeDefi('cardio', 'defi');">
+				Cardio
+			</button><br><br>
+
+			<button onclick="Defi.winDefi('categorie')" class="input_color_invers">
+				Défi réussi !
+			</button>
+		</div>
+
+		<div class="img">
+			<a href="/troll"><img src="../static/sport.png"></a>
+		</div>
+
+		<div class="grandeMarge">
+			<button onclick="window.location.replace('./graph.html')">
+				Enregistrer et voir mes séries.
+			</button>
+		</div>
+
+		<script type="text/javascript">
+			Defi.choisiDefi();
+			Defi.getTemps('date');
+			Defi.placePseudo();
+		</script>
+
+	</body>
+</html>
