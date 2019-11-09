@@ -2,7 +2,7 @@ let json = `
 {
 	"muscu" : [
 		{
-			"titre" : "traction",
+			"titre" : "tractions",
 			"description" : "Faites 40 tractions (autant de séries que vous le souhaitez).",
 			"points" : 200
 		},
@@ -20,7 +20,7 @@ let json = `
 		},
 
 		{
-			"titre" : "jambes",
+			"titre" : "fentes",
 			"description" : "Faites 100 fentes sur chaques jambes pour être énorme et sec.",
 			"points" : 250
 		},
@@ -29,12 +29,18 @@ let json = `
 			"titre" : "squats",
 			"description" : "Faites 100 squats pour avoir des fessiers d enfer !",
 			"points" : 250
+		},
+
+		{
+			"titre" : "abdos",
+			"description" : "Faites 100 crunchs pour des abdos bien dessinés !",
+			"points" : 250
 		}
 	],
 	
 	"cardio" : [
 		{
-			"titre" : "jumping jack",
+			"titre" : "jumpingjack",
 			"description" : "Si vous faites 300 jumping jack dans les 24 prochaines heures...",
 			"points" : 350
 		},
@@ -52,7 +58,7 @@ let json = `
 		},
 
 		{
-			"titre" : "lever de genoux",
+			"titre" : "lever_de_genou",
 			"description" : "Pas cap de faire 300 lever de genoux",
 			"points" : 350
 		},
@@ -81,9 +87,11 @@ let Defi = {
 	changeDefi : (categorie, idParagraphe) => {
 		localStorage.categorie = categorie;
 		if (categorie == "muscu") {
-			document.getElementById(idParagraphe).innerHTML = localStorage.muscuDefi;
+			document.getElementById(idParagraphe).innerHTML = "<a href='./" + localStorage.muscuTitre + ".html'>" + 
+			localStorage.muscuDefi + " (clique ici)</a>";
 		} else if (categorie == "cardio") {
-			document.getElementById(idParagraphe).innerHTML = localStorage.cardioDefi;
+			document.getElementById(idParagraphe).innerHTML = "<a href='./" + localStorage.cardioTitre + ".html'>" + 
+			localStorage.cardioDefi + " (clique ici)</a>";
 		}
 	},
 
@@ -133,6 +141,8 @@ let Defi = {
 		localStorage.cardioDefi = SerieCardio.description;
 		localStorage.muscuPoint = SerieMuscu.points;
 		localStorage.cardioPoint = SerieCardio.points;
+		localStorage.cardioTitre = SerieCardio.titre;
+		localStorage.muscuTitre = SerieMuscu.titre;
 	}
 };
 
