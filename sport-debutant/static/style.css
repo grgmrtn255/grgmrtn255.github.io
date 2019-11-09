@@ -26,8 +26,8 @@ button:hover, input:hover, .input_color_invers, select:hover {
 
 .demiBouton {
 	width : 40%;
-	display : inline;
-	margin : 1%;
+	display : inline-block;
+	margin : 2.2%;
 }
 
 ::placeholder {
