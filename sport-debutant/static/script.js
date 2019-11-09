@@ -118,6 +118,7 @@ let Defi = {
 	placePseudo : () => {
 		if (localStorage.username) {
 			document.getElementById('pseudo').innerHTML = "Bienvenu " + localStorage.username + " !";
+			localstorage.categorie = "";
 		} else {
 			window.location.replace('./index.html');
 			alert('Veuillez entrer un pseudo.');
