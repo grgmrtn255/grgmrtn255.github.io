@@ -164,7 +164,7 @@ let Serie = {
 };
 
 let DataBase = {
-	lire : () => {return localStorage;}
+	lire : () => {return localStorage;},
 	ecrire : (Serie) => {
 		if (localStorage[Serie.date] != undefined) {
 			localStorage[Serie.date] = parseInt(localStorage[Serie.date]) + parseInt(Serie.points);
