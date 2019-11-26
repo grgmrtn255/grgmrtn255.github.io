@@ -9,9 +9,9 @@ h1, h2, p, label {
 }
 
 button, input, .input_color_invers:hover, select {
-	color : rgb(150, 150, 100);
+	color : rgb(106, 106, 186);
 	background-color: rgb(45, 45, 150);
-	border-color : rgb(150, 150, 100);
+	border-color : rgb(106, 106, 186);
 	border-radius: 10px;
 	width: 100%;
 	padding : 2%;
@@ -21,7 +21,7 @@ button, input, .input_color_invers:hover, select {
 button:hover, input:hover, .input_color_invers, select:hover {
 	border-color : rgb(45, 45, 150);
 	color : rgb(45, 45, 150);
-	background-color: rgb(150, 150, 100);
+	background-color: rgb(106, 106, 186);
 }
 
 .demiBouton {
