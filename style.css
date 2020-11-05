@@ -1,0 +1,109 @@
+/*
+	* Color : 
+		#222222 : Gris foncÃ©;
+		#333333 : Gris clair;
+
+		#ffc26a
+		#f0a83f
+		rgb(221, 138, 18) : Orange (#dd8a12);
+		#b16b05
+		#895100 : Orange foncÃ©;
+
+		#DDAD12 : Jaune;
+		#896900 : Jaune foncÃ©;
+
+		#27219a : Bleu;
+		#0F0B60 : Bleu foncÃ©;
+*/
+
+body {
+	background-color : #252525;
+	color : #b16b05;
+}
+
+header, footer {
+	background-color : #151515;
+	color : #b16b05;
+	padding : 1.2em;
+}
+
+header {
+	margin : -1em;;
+}
+
+footer {
+	margin-right : -1em;
+	margin-left : -1em;
+}
+
+.menu {
+	height : 100%;
+	background-color : #353535;
+	width : 15%;
+	margin-left : -0.5em;
+	margin-top : 1em;
+	display : inline-block;
+	vertical-align : top;
+}
+
+.my_font {
+	font-family : Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;
+}
+
+.font_titre {
+	font-family : Lucida, "Lucida Calligraphy", Helvetica, Georgia;
+}
+
+.contenu {
+	background-color : #252525;
+	width : 60%;
+	padding : 2%;
+	display : inline-block;
+	vertical-align : top;
+}
+
+.corps {
+	background-color : #353535;
+	margin-left : -0.5em;
+	margin-right : -1em;
+	margin-top : 1em;
+}
+
+button {
+	color : #dd8a12;
+	width : 100%;
+	padding: 5%;
+	background-color : #353535;
+	border : 0px #353535 solid;
+	transition : 0.7s;
+	border-radius: 5px;
+}
+
+button:hover {
+	color : #f0a83f;
+	background-color : #151515;
+}
+
+input, select {
+	background-color: #b16b05;
+	color : #252525;
+	padding : 2%;
+	border-radius: 5px;
+	border : 1px #252525 solid;
+	transition : 0.5s;
+}
+
+input:hover, select:hover {
+	background-color: #353535;
+	color : #b16b05;
+}
+
+select {
+	width : 105%;
+}
+
+img {
+	margin-right : 20%;
+	margin-left : 20%;
+	margin-top : 1%;
+}

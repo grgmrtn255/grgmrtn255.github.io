@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Coach Sportif Online</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="script.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+	</head>
+
+	<body>
+		<header><h1 class="font_titre">Coach Sportif Online</h1></header>
+
+		<div class="corps">
+			<div class="menu">
+				<button onclick="window.location = 'index.html'">Bienvenu</button>
+				<button onclick="window.location = 'enregistrer.html'">Enregistrer</button>
+				<button onclick="window.location = 'musculation.html'">Musculation</button>
+				<button onclick="window.location = 'cardio.html'">Cardio</button>
+				<button onclick="window.location = 'objectif.html'">Objectif</button>
+			</div>
+
+			<div class="contenu">
+				<h2 class="my_font"></h2>
+				<p class="my_font"></p>
+
+				<div id="graphique_container">
+					<canvas id="graphique_canvas"></canvas>
+				</div>
+
+				<script type="text/javascript">
+					Graphique.getData();
+				</script>
+			</div>
+		</div>
+
+		<footer>
+			<pre>
+				
+_________                     .__        _________                     __  .__  _____  ________         .__  .__               
+\_   ___ \  _________    ____ |  |__    /   _____/_____   ____________/  |_|__|/ ____\ \_____  \   ____ |  | |__| ____   ____  
+/    \  \/ /  _ \__  \ _/ ___\|  |  \   \_____  \\____ \ /  _ \_  __ \   __\  \   __\   /   |   \ /    \|  | |  |/    \_/ __ \ 
+\     \___(  <_> ) __ \\  \___|   Y  \  /        \  |_> >  <_> )  | \/|  | |  ||  |    /    |    \   |  \  |_|  |   |  \  ___/ 
+ \______  /\____(____  /\___  >___|  / /_______  /   __/ \____/|__|   |__| |__||__|    \_______  /___|  /____/__|___|  /\___  >
+        \/           \/     \/     \/          \/|__|                                          \/     \/             \/     \/ 
+
+			</pre>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Coach Sportif Online</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+
+	<body>
+		<header><h1 class="font_titre">Coach Sportif Online</h1></header>
+
+		<div class="corps">
+			<div class="menu">
+				<button onclick="window.location = 'index.html'">Bienvenu</button>
+				<button onclick="window.location = 'enregistrer.html'">Enregistrer</button>
+				<button onclick="window.location = 'musculation.html'">Musculation</button>
+				<button onclick="window.location = 'cardio.html'">Cardio</button>
+				<button onclick="window.location = 'graphique.html'">Graphiques</button>
+			</div>
+
+			<div class="contenu">
+				<h2 class="my_font">Objectifs du jour</h2>
+				<p class="my_font">Chaque objectif peut être fait en l'espace de 24h, vous prenez autant de pause que vous le souhaitez. Le but c'est d'arriver au bout en l'espace d'une journée, le temps n'est pas compté. En réussissant des objectifs vous gagnez des bonus de points que vous n'obtiendrez pas en enregistrant simplement des exercices.</p>
+
+				<h3 class="my_font">Musculation</h3>
+				<p class="my_font" id="muscu">L'ojectif du jour de musculation sera : </p>
+
+				<input type="hidden" id="muscuExo">
+				<input type="hidden" id="muscuNombre">
+				<input type="button" value="Défi de musculation accomplie !" onclick="DataBase.ecrire({ 'points' : window.sessionStorage.muscuPoint, 'date' : date.toDateString() }); alert('Bravo ! Un objectif réussi !');">
+
+				<h3 class="my_font">Cardio</h3>
+				<p class="my_font" id="cardio">L'objectif du jour de cardio sera : </p>
+
+				<input type="button" value="Défi de cardio accomplie !" onclick="DataBase.ecrire({ 'points' : window.sessionStorage.cardioPoint, 'date' : date.toDateString() }); alert('Bravo ! Un objectif réussi !');">
+
+				<script type="text/javascript">
+					Defi.choisiDefi();
+
+					document.getElementById("muscu").innerHTML += window.sessionStorage.muscuDefi;
+					document.getElementById("cardio").innerHTML += window.sessionStorage.cardioDefi;
+
+					let date = new Date();
+				</script>
+			</div>
+		</div>
+
+		<footer>
+			<pre>
+				
+_________                     .__        _________                     __  .__  _____  ________         .__  .__               
+\_   ___ \  _________    ____ |  |__    /   _____/_____   ____________/  |_|__|/ ____\ \_____  \   ____ |  | |__| ____   ____  
+/    \  \/ /  _ \__  \ _/ ___\|  |  \   \_____  \\____ \ /  _ \_  __ \   __\  \   __\   /   |   \ /    \|  | |  |/    \_/ __ \ 
+\     \___(  <_> ) __ \\  \___|   Y  \  /        \  |_> >  <_> )  | \/|  | |  ||  |    /    |    \   |  \  |_|  |   |  \  ___/ 
+ \______  /\____(____  /\___  >___|  / /_______  /   __/ \____/|__|   |__| |__||__|    \_______  /___|  /____/__|___|  /\___  >
+        \/           \/     \/     \/          \/|__|                                          \/     \/             \/     \/ 
+
+			</pre>
+		</footer>
+	</body>
+</html>

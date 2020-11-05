@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Coach Sportif Online</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+
+	<body>
+		<header><h1 class="font_titre">Coach Sportif Online</h1></header>
+
+		<div class="corps">
+			<div class="menu">
+				<button onclick="window.location = 'index.html'">Bienvenu</button>
+				<button onclick="window.location = 'musculation.html'">Musculation</button>
+				<button onclick="window.location = 'cardio.html'">Cardio</button>
+				<button onclick="window.location = 'objectif.html'">Objectif</button>
+				<button onclick="window.location = 'graphique.html'">Graphiques</button>
+			</div>
+
+			<div class="contenu">
+				<h2 class="my_font"></h2>
+				<p class="my_font"></p>
+
+				<table>
+					<tr>
+						<td><label for="exercice">Choississez l'exercice : </label></td>
+						<td>
+							<select id="exercice">
+								<option value="pompes">Pompes</option>
+								<option value="tractions">Tractions</option>
+								<option value="deeps">Deeps</option>
+								<option value="jambes">Fentes/Squats</option>
+								<option value="abdos">Abdos</option>
+								<option value="lever_de_genou">Lever de genou</option>
+								<option value="jumpingjack">Jumping Jack</option>
+								<option value="mountainclimber">MountainClimber</option>
+								<option value="burppees">Burppees</option>
+							</select>
+						</td>
+					</tr>
+
+					<tr>
+						<td><label for="quantite">Entrez le nombre de répétitions : </label></td>
+						<td><input id='quantite' type="number" name="quantite" placeholder="10" required></td>
+					</tr>
+				</table><br><br>
+
+				<input type="button" value="Enregistrer la série" onclick="Serie.save('exercice', 'quantite');" class="input_color_invers">
+			</div>
+		</div>
+
+		<footer>
+			<pre>
+				
+_________                     .__        _________                     __  .__  _____  ________         .__  .__               
+\_   ___ \  _________    ____ |  |__    /   _____/_____   ____________/  |_|__|/ ____\ \_____  \   ____ |  | |__| ____   ____  
+/    \  \/ /  _ \__  \ _/ ___\|  |  \   \_____  \\____ \ /  _ \_  __ \   __\  \   __\   /   |   \ /    \|  | |  |/    \_/ __ \ 
+\     \___(  <_> ) __ \\  \___|   Y  \  /        \  |_> >  <_> )  | \/|  | |  ||  |    /    |    \   |  \  |_|  |   |  \  ___/ 
+ \______  /\____(____  /\___  >___|  / /_______  /   __/ \____/|__|   |__| |__||__|    \_______  /___|  /____/__|___|  /\___  >
+        \/           \/     \/     \/          \/|__|                                          \/     \/             \/     \/ 
+
+			</pre>
+		</footer>
+	</body>
+</html>
