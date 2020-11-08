@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://grgmrtn255.github.com/sitemap.xml

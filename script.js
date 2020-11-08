@@ -20,8 +20,8 @@ let json = `
 		},
 
 		{
-			"titre" : "deeps",
-			"description" : "Faites 40 deeps pour avoir des pecs énorme !",
+			"titre" : "dips",
+			"description" : "Faites 40 dips pour avoir des pecs énorme !",
 			"points" : 200
 		},
 
@@ -64,8 +64,8 @@ let json = `
 		},
 
 		{
-			"titre" : "burppees",
-			"description" : "Rien de mieux que des bonnes burppees, 100 burppees semble être un bon défi.",
+			"titre" : "burpees",
+			"description" : "Rien de mieux que des bonnes burpees, 100 burppees semble être un bon défi.",
 			"points" : 500
 		},
 
@@ -148,7 +148,7 @@ let Serie = {
 		if (serie == "pompes" || serie == "abdos" || serie == "jambes" || 
 			serie == "lever_de_genou" || serie == "mountainclimber" || serie == "jumpingjack") {
 			points = repetition * 2;
-		} else if (serie == "tractions" || serie == "deeps" || serie == "burppees") {
+		} else if (serie == "tractions" || serie == "dips" || serie == "burpees") {
 			points = repetition * 4;
 		} else {
 			return 0;
